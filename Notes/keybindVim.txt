@@ -74,7 +74,15 @@ Normal mode :
 
 	search word forward :
 		command : /word_you_search
+		ignore case command : /word_you_search\c
 		key : n
+
+	set options for search :
+		command : :set options
+			options : 
+				ic or ignorecase       ignore upper/lower case when searching
+        		is or incsearch        show partial matches for a search phrase
+        		hls or hlsearch        highlight all matching phrases
 	
 	search word backward :
 		command : ?word_you_search
